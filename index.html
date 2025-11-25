@@ -1,0 +1,90 @@
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <!-- TODO 1: Add a favicon and a title -->
+        <title>My Personal Website</title>
+        <link rel = "icon" type = "image/x-icon" sizes = "16x16" href = "/assets/favicon.ico">
+    </head>
+    <body>
+        <nav>
+            <!-- TODO 2: Add an logo and a name -->
+            <a href="./" id="logo">
+                <img src = "/assets/flower.png" alt = "Profile Logo">
+                Tin
+            </a>
+
+            <button id="anchor-list-trigger" onclick="toggleAnchorList()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentcolor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M 3 6 h 18 M 3 12 h 18 M 3 18 h 18" />
+                </svg>
+            </button>
+
+            <!-- TODO 3: Add the URL to your GitHub Pages repository -->
+            <ul id="anchor-list">
+                <li><a href = "https://github.com/spaghettihood/spaghettihood.github.io" target = "_blank">GitHub</a></li>
+            </ul>
+        </nav>
+
+        <div id="section-container">
+            <section id="hero">
+                <!-- TODO 4: Assign an h1 heading and a short description about you -->
+                <!-- TODO 4: Replace the 2 <span>...</span> tags with 2 appropriate tags -->
+                <div id = "about">
+                    <h1>...</h1>
+                    <p>Hi, I'm Tin. I'm currently studying my second year of computer science at HKUST. <br>
+                    I'm still kind of clueless with computers, so it's probably not a good idea to ask me for advice.</p>
+                </div>
+                <!-- TODO 4: Add an avatar -->
+                <img id="avatar" src = "/assets/avatar.png">
+            </section>
+
+            <hr />
+
+            <section id="about">
+                <h2>About</h2>
+                <!-- TODO 5: A short paragraph about you -->
+                <p>Man, I dunno.</p>
+            </section>
+
+            <hr />
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <!-- TODO 6: Elaborate more skills using HTML elements -->
+                <div id="skill-set">
+                    <span class = "skill"><img src = "/assets/icon-html.png" alt = "HTML icon"> HTML</span>
+                    <span class = "skill"><img src = "/assets/icon-css.png" alt = "CSS icon"> CSS</span>
+                    <span class = "skill"><img src = "/assets/icon-js.png" alt = "Javascript icon"> JavaScript</span>
+                    <span class = "skill"><img src = "/assets/icon-py.png" alt = "Python icon"> Python</span>
+                    <span class = "skill"><img src = "/assets/icon-np.png" alt = "Numpy icon"> Numpy</span>
+                    <span class = "skill"><img src = "/assets/icon-cpp.png" alt = "C++ icon"> C++</span>
+                </div>
+            </section>
+
+            <hr />
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <!-- TODO 7: Put your HKUST email without the domain -->
+                <p>zlinco</p>
+            </section>
+        </div>
+
+        <footer>An assessment for COMP 4900 (Fall 2025)</footer>
+
+        <script>
+            function toggleAnchorList() {
+                const anchor_list = document.getElementById("anchor-list");
+                if (window.getComputedStyle(anchor_list).getPropertyValue("--show-anchor-list") == "none") {
+                    anchor_list.style.setProperty("--show-anchor-list", "block");
+                }
+                else {
+                    anchor_list.style.setProperty("--show-anchor-list", "none");
+                }
+            }
+        </script>
+    </body>
+</html>
