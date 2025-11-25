@@ -57,7 +57,10 @@
                 <div id="skill-set">
                     <span class = "skill"><img src = "/assets/icon-html.png" alt = "HTML icon"> HTML</span>
                     <span class = "skill"><img src = "/assets/icon-css.png" alt = "CSS icon"> CSS</span>
-                    <span class = "skill"><img id = "easterEgg" onmouseover = "changeImage(this)" onmouseout = "changeBack(this)" src = "/assets/icon-js.png" alt = "Javascript icon"> JavaScript</span>
+                    <span class = "skill">
+                        <img id = "easterEgg" onmouseover = "changeImage(this)" onmouseout = "changeBack(this)" 
+                        src = "/assets/icon-js.png" alt = "Javascript icon">
+                    JavaScript</span>
                     <span class = "skill"><img src = "/assets/icon-py.png" alt = "Python icon"> Python</span>
                     <span class = "skill"><img src = "/assets/icon-np.png" alt = "Numpy icon"> Numpy</span>
                     <span class = "skill"><img src = "/assets/icon-cpp.png" alt = "C++ icon"> C++</span>
@@ -91,7 +94,7 @@
             }
             function changeBack(js) {
                 js.setAttribute("src", "assets/icon-js.png");
-                console.log("Img Unchange);
+                console.log("Img Unchange");
             }
         </script>
         
